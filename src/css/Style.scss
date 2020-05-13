@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+html {
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+
+#root {
+  border: 2px solid #000;
+  width: 400px;
+  margin: 50px auto;
+  height: 600px;
+  position: relative;
+  > div {
+    height: 570px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: yellow;
+  }
+  > div::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#header-input {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(255, 60, 0), #ffe400);
+  button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+.word-main {
+  margin: 5px 0;
+  padding: 5px;
+  background: linear-gradient(to right, #c3ff76, #906e61);
+  h3 {
+    margin: 5px 0;
+  }
+  .word-top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    button {
+      display: block;
+      margin: 3px 0;
+      background: #005aff82;
+      border-radius: 50%;
+      border: none;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+    div:last-of-type {
+      grid-column: 2/6;
+    }
+  }
+}
+#button-bottom {
+  border-top: 2px solid #777;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  button {
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+  }
+}
+#add-input input{
+    display: block;
+    height: 35px;
+    box-sizing: border-box;
+    width: 100%;
+    margin:5px 0;
+    padding-left:10px;
+  }

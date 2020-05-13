@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+html {
+  font-family: "Lora", serif;
+  font-size: 18px;
+}
+#root {
+  width: 400px;
+  margin: 50px auto;
+  height: 600px;
+  position: relative;
+}
+#root > div {
+
+  height: 570px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: yellow;
+}
+
+
+#root > div::-webkit-scrollbar {
+display: none;
+}
+#word-top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+#word-top div:last-of-type {
+  grid-column: 2/6;
+}
+
+#word-main h3 {
+  margin: 8px 0;
+}
+#word-top button {
+  display: block;
+  margin: 3px 0;
+}
+#word-top i {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+
+#button-bottom button {
+  padding: 10px;
+}
+
+#button-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+width: 100%;
+}
+#add-input{
+  padding:10px;
+}
+#add-input input{
+  display: block;
+  height: 35px;
+  box-sizing: border-box;
+  width: 100%;
+  margin:5px 0;
+  padding-left:10px;
+}
+#header-input{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ce6e6e;
+  margin: 10px;
+}
+#header-input button{
+  width: 20px;
+  height: 20px;
+}
